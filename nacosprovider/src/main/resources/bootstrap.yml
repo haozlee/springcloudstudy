@@ -7,9 +7,6 @@ spring:
 
   cloud:
     nacos:
-      config:
-        server-addr: localhost:8868
-        file-extension: yaml
       discovery:
         server-addr: localhost:8868
 
