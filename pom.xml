@@ -35,7 +35,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>{spring-cloud-alibaba.version}</version>
+                <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -44,5 +44,6 @@
 
     <modules>
         <module>nacosconfig</module>
+        <module>nacosprovider</module>
     </modules>
 </project>

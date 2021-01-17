@@ -1,8 +1,15 @@
+server:
+  port: 8060
+
 spring:
   application:
-    name: nacosconfig
+    name: nacos-provider
+
   cloud:
     nacos:
       config:
         server-addr: localhost:8868
         file-extension: yaml
+      discovery:
+        server-addr: localhost:8868
+
