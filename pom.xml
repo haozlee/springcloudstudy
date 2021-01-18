@@ -45,5 +45,6 @@
     <modules>
         <module>nacosconfig</module>
         <module>nacosprovider</module>
+        <module>nacosconsumer</module>
     </modules>
 </project>
