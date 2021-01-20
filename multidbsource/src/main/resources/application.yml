@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: multidbsource
+
+  datasource:
+    druid:
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*,"
+
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: admin
+        reset-enable: false
+        url-pattern: /druid/*
+
+      total:
+        url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP) (HOST = 10.88.x.x )(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = xxx) ) )
+        username: user
+        password: passwd
+        driver-class-name: oracle.jdbc.OracleDriver
+        initial-size: 32
+        max-active: 32
+        min-idle: 5
+        max-wait: 60000
+
+      part1:
+        url: jdbc:oracle:thin:@(DESCRIPTION = (ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP) (HOST = 10.88.x.x )(PORT = 1521))) (CONNECT_DATA = (SERVICE_NAME = xxx) ) )
+        username: user
+        password: passwd
+        driver-class-name: oracle.jdbc.OracleDriver
+        initial-size: 32
+        max-active: 32
+        min-idle: 5
+        max-wait: 60000
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+

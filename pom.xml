@@ -46,5 +46,6 @@
         <module>nacosconfig</module>
         <module>nacosprovider</module>
         <module>nacosconsumer</module>
+        <module>multidbsource</module>
     </modules>
 </project>
