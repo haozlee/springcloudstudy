@@ -7,12 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.logging.Logger;
 
 @RestController
 public class PersonController {
-    private final Logger logger = Logger.getLogger(String.valueOf(getClass()));
-
     @Resource
     private PersonService personService;
 
@@ -21,5 +18,4 @@ public class PersonController {
                          @RequestParam(value="id", required=true)Integer id) {
         return personService.getPerson(db, id);
     }
-
 }
