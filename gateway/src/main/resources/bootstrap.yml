@@ -10,10 +10,10 @@ spring:
         server-addr: localhost:8868
     gateway:
       routes:
-        - id: nacos-provider
-          uri: lb://nacos-provider
-          predicates:
-            - Path=/provider/**
-          filters:
-            - StripPrefix=1
+      - id: nacos-provider
+        uri: lb://nacos-provider
+        predicates:
+        - Path=/provider/**
+        filters:
+        - StripPrefix=1
 
