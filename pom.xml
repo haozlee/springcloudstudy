@@ -47,5 +47,6 @@
         <module>nacosprovider</module>
         <module>nacosconsumer</module>
         <module>multidbsource</module>
+        <module>gateway</module>
     </modules>
 </project>
